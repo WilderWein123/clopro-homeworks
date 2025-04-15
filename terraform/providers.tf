@@ -8,7 +8,7 @@ terraform {
 
 provider "yandex" {
   token                    = var.token
-  cloud_id                 = var.cloud.develop.cloud_id
-  folder_id                = var.cloud.develop.folder_id
-  zone                     = var.cloud.develop.default_zone
+  cloud_id                 = var.cloud.netology.cloud_id
+  folder_id                = var.cloud.netology.folder_id
+  zone                     = var.cloud.netology.default_zone
 }

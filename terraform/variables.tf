@@ -8,8 +8,8 @@ variable cloud {
     vpc_name = string
   }))
     default = { 
-      "develop" = {
-        cloud_id = "b1gcd1nmr4tl1hd9duc8"
+      "netology" = {
+        cloud_id = "dn233vdl3pdu43936vpg"
         folder_id = "b1gj6ia0559mol9ufg9k"
         default_zone = "ru-central1-a"
         vpc_name = "netology"
@@ -47,7 +47,7 @@ variable vm {
         cores = 2
         memory = 1
         core_fraction = 5
-        zone = "ru.central1-a"
+        zone = "ru-central1-a"
         image = "fd80mrhj8fl2oe87o4e1"
         network_cidr = ["192.168.10.0/24"]
         boot_disk_size = 10
@@ -60,7 +60,7 @@ variable vm {
         memory = 1
         core_fraction = 5
         image = "fd80mrhj8fl2oe87o4e1"
-        zone = "ru.central1-b"
+        zone = "ru-central1-b"
         network_cidr = ["192.168.20.0/24"]
         boot_disk_size = 10
         preemptible = true

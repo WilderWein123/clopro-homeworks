@@ -3,12 +3,14 @@ resource "yandex_vpc_network" "terraform-network" {
 }
 
 resource "yandex_vpc_subnet" "subnet-public" {
+  name           = "subnet_public"
   zone           = var.vm.public.zone
   network_id     = yandex_vpc_network.terraform-network.id
   v4_cidr_blocks = var.vm.public.network_cidr
 }
 
 resource "yandex_vpc_subnet" "subnet-private" {
+  name           = "subnet_private"
   zone           = var.vm.private.zone
   network_id     = yandex_vpc_network.terraform-network.id
   v4_cidr_blocks = var.vm.private.network_cidr
